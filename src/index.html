@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html data-theme="winter" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom.us</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="tracking-wide">
+    <div
+      id="navBar"
+      class="flex flex-row items-center justify-between h-16 pl-10 font-bold border-b-2 border-neutral-300"
+    >
+      <div id="leftSideNav" class="flex gap-10 text-xl items-center">
+        <img src="./images/zoom.logo.png" class="h-5" />
+        <a class="hover:text-primary" href="">Product</a>
+        <a class="hover:text-primary" href="">Solutions</a>
+        <a class="hover:text-primary" href="">Resources</a>
+        <a class="hover:text-primary" href="">Ai Companion</a>
+      </div>
+
+      <div id="rightSideNav" class="flex gap-3">
+        <button
+          class="btn-md flex bg-none gap-2 border-neutral-content border-solid border-2 rounded-full items-center hover:bg-primary hover:text-white transition duration-300 ease-in-out"
+        >
+          <img class="h-4 opacity-70" src="./images/user.png" />
+          <a href="">Sign In</a>
+        </button>
+        <button
+          class="btn-md flex bg-none border-neutral-content border-solid border-2 rounded-full items-center hover:bg-primary hover:text-white transition duration-300 ease-in-out"
+        >
+          Plans & Pricing
+        </button>
+
+        <button
+          id="homeButton"
+          class="btn-md mr-10 rounded-full border-neutral-300 border-2 hover:bg-primary hover:text-white transition duration-300 ease-in-out"
+        >
+          <img class="opacity-70 h-4" src="./images/home.png" />
+        </button>
+      </div>
+    </div>
+    <div id="home" class="hidden">
+      <div
+        id="containerDropdown"
+        class="flex-col absolute pb-8 z-10 right-0 top-15 font-bold tracking-wide text-slate-900 bg-base-200 w-80 rounded-bl-lg border-l-2 border-b-2 border-neutral-300"
+      >
+        <ol
+          id="dropdown"
+          class="flex flex-col pb-4 border-b-2 border-neutral-300 text-xl"
+        >
+          <div class="flex flex-row items-center gap-4 p-4 hover:bg-primary">
+            <img class="h-5" src="./images/search.png" />
+            <input
+              type="search"
+              placeholder="search..."
+              class="w-60 pl-4 rounded-full"
+            />
+          </div>
+          <div class="flex flex-row items-center gap-4 p-4 hover:bg-primary">
+            <img class="h-5" src="./images/phone-call.png" />
+            <a href="">Support</a>
+          </div>
+          <div class="flex flex-row items-center gap-4 p-4 hover:bg-primary">
+            <img class="h-5" src="./images/world.png" />
+            <a href="">1.888.799.9666</a>
+          </div>
+          <div class="flex flex-row items-center gap-4 p-4 hover:bg-primary">
+            <img class="h-5" src="./images/bulb.png" />
+            <a href="">Request a Demo</a>
+          </div>
+          <div class="flex flex-row items-center gap-4 p-4 hover:bg-primary">
+            <img class="h-5" src="./images/users-alt.png" />
+            <a href="">Join</a>
+          </div>
+          <div class="flex flex-row items-center gap-4 p-4 hover:bg-primary">
+            <img class="h-5" src="./images/computer.png" />
+            <a href="">Host</a>
+          </div>
+          <div class="flex flex-row items-center gap-4 p-4 hover:bg-primary">
+            <img class="h-5" src="./images/user.png" />
+            <a href="">Contact sales</a>
+          </div>
+        </ol>
+      </div>
+    </div>
+
+    <div
+      id="hero"
+      class="flex flex-col items-center text-start ml-10 mr-10 mt-16 pb-16 border-b-2 border-neutral-300"
+    >
+      <div class="flex flex-row gap-24 p-10 rounded-3xl">
+        <div class="flex flex-col justify-between h-96">
+          <h1 class="text-5xl text-slate-900 font-bold font-display">
+            Your Digital Workplace
+          </h1>
+
+          <p class="text-2xl font-sans font-normal">
+            Zoom is a communications software used for virtual video and audio
+            conferencing, but also allows live chats, screen-sharing, and other
+            collaborative options. Zoom allows users to create and join virtual
+            meeting rooms where they can communicate with each other using
+            video, and audio.
+          </p>
+
+          <div id="buttons" class="flex flex-row gap-10">
+            <button
+              class="btn flex w-72 h-16 bg-primary text-white text-2xl font-bold border-neutral-content border-solid border-2 rounded-full items-center"
+            >
+              Sign Up
+            </button>
+
+            <button
+              class="btn flex w-72 h-16 bg-none text-lg border-neutral-content border-solid border-2 rounded-full items-center"
+            >
+              Discover Zoom Workplace
+            </button>
+          </div>
+        </div>
+        <img class="h-96 rounded-3xl" src="./images/zoom.meetings.jpg" />
+      </div>
+    </div>
+    <div
+      id="scrollPageTwo"
+      class="flex flex-row justify-between gap-10 bg-base-200 p-10 border-b-2 border-neutral-300"
+    >
+      <div
+        id="leftSide"
+        class="flex flex-col justify-between py-36 ml-10 my-16 border-t-2 border-b-2 border-neutral-300"
+      >
+        <h2 class="text-slate-900 text-5xl font-bold">
+          Powering organizations across industires and geographies
+        </h2>
+        <p class="text-2xl">
+          Zoom helps consolidate communications, connect people, and collaborate
+          better together in the boardroom, classroom, operating room, and
+          everywhere in between.
+        </p>
+      </div>
+
+      <div id="rightSide" class="flex flex-col gap-10 mr-10 my-16">
+        <div class="flex flex-row gap-10">
+          <button
+            class="btn-md flex flex-col items-center justify-center h-36 w-72 px-10 py-4 border-2 border-slate-900 text-slate-900 rounded-3xl hover:bg-primary hover:text-white hover:border-neutral-300 transition duration-300 ease-in-out"
+          >
+            <img class="h-10" src="./images/graduation-cap.png" />
+            <p class="text-3xl font-bold">Education</p>
+          </button>
+
+          <button
+            class="btn-md flex flex-col items-center justify-center h-36 w-72 px-10 py-4 border-2 border-slate-900 text-slate-900 rounded-3xl hover:bg-primary hover:text-white hover:border-neutral-300 transition duration-300 ease-in-out"
+          >
+            <img class="h-10" src="./images/coins.png" />
+            <p class="text-3xl font-bold">Financial Services</p>
+          </button>
+        </div>
+
+        <div class="flex flex-row gap-10">
+          <button
+            class="btn-md flex flex-col items-center justify-center h-36 w-72 px-10 py-4 border-2 border-slate-900 text-slate-900 rounded-3xl hover:bg-primary hover:text-white hover:border-neutral-300 transition duration-300 ease-in-out"
+          >
+            <img class="h-10" src="./images/bank.png" />
+            <p class="text-3xl font-bold">Government</p>
+          </button>
+
+          <button
+            class="btn-md flex flex-col items-center justify-center h-36 w-72 px-10 py-4 border-2 border-slate-900 text-slate-900 rounded-3xl hover:bg-primary hover:text-white hover:border-neutral-300 transition duration-300 ease-in-out"
+          >
+            <img class="h-10" src="./images/building.png" />
+            <p class="text-3xl font-bold">Healthcare</p>
+          </button>
+        </div>
+
+        <div class="flex flex-row gap-10">
+          <button
+            class="btn-md flex flex-col items-center justify-center h-36 w-72 px-10 py-4 border-2 border-slate-900 text-slate-900 rounded-3xl hover:bg-primary hover:text-white hover:border-neutral-300 transition duration-300 ease-in-out"
+          >
+            <img class="h-10" src="./images/settings.png" />
+            <p class="text-3xl font-bold">Manufacturing</p>
+          </button>
+
+          <button
+            class="btn-md flex flex-col items-center justify-center h-36 w-72 px-10 py-4 border-2 border-slate-900 text-slate-900 rounded-3xl hover:bg-primary hover:text-white hover:border-neutral-300 transition duration-300 ease-in-out"
+          >
+            <img class="h-10" src="./images/handshake.png" />
+            <p class="text-3xl font-bold">Retail</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="cta"
+      class="bg-primary h-72 flex flex-col items-center justify-center gap-6"
+    >
+      <h2
+        class="font-display text-white text-4xl pb-6 border-b-2 border-neutral-300"
+      >
+        Ready to get started?
+      </h2>
+
+      <div class="flex flex-row gap-6">
+        <button
+          class="btn-md h-16 px-10 text-lg font-sans font-bold text-slate-900 bg-white rounded-full border-2 border-neutral-300"
+        >
+          Sign Up, It's Free
+        </button>
+
+        <button
+          class="btn-md h-16 px-10 text-lg font-sans font-bold text-white bg-primary rounded-full border-2 border-neutral-300"
+        >
+          Contact Sales
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-slate-900 p-10">
+      <div
+        id="footer"
+        class="flex flex-row justify-between bg-slate-900 border-b-2 border-neutral-300 p-10"
+      >
+        <ul class="text-white text-sm w-40 pb-4">
+          <h2 class="text-lg mb-4">About</h2>
+          <p>Zoom Blog</p>
+          <p>Customers</p>
+          <p>Our Team</p>
+          <p>Careers</p>
+          <p>Integrations</p>
+          <p>Partners</p>
+          <p>Investors</p>
+          <p>Press</p>
+          <p>Sustainability & ESG</p>
+          <p>Zoom Cares</p>
+          <p>Media Kit</p>
+          <p>How To Videos</p>
+          <p>Developer Platform</p>
+          <p>Zoom Ventures</p>
+          <p>Zoom Merchandise Store</p>
+        </ul>
+
+        <ul class="text-white text-sm w-40">
+          <h2 class="text-lg mb-4">Download</h2>
+          <p>Zoom Workplace App</p>
+          <p>Zoom Rooms App</p>
+          <p>Zoom Rooms Controller</p>
+          <p>Browser Extension</p>
+          <p>Outlook Plug-In</p>
+          <p>Iphone/Ipad App</p>
+          <p>Android App</p>
+          <p>Zoom Virtual Backgrounds</p>
+        </ul>
+
+        <ul class="text-white text-sm w-40">
+          <h2 class="text-lg mb-4">Sales</h2>
+          <p>1.888.799.9666</p>
+          <p>Contact Sales</p>
+          <p>Plans & Pricing</p>
+          <p>Request a Demo</p>
+          <p>Webinary and Events</p>
+          <p>Zoom Experience Center</p>
+        </ul>
+
+        <ul class="text-white text-sm w-40">
+          <h2 class="text-lg mb-4">Support</h2>
+          <p>Test Zoom</p>
+          <p>Account</p>
+          <p>Support</p>
+          <p>Learning Center</p>
+          <p>Feedback</p>
+          <p>Zoom Community</p>
+          <p>Contact Us</p>
+          <p>Accessibility</p>
+          <p>Developer Support</p>
+          <p>Privacy, Security, Legal Policies and Modern Slavery Act</p>
+          <p>Transparency Statement</p>
+        </ul>
+
+        <div class="flex flex-col w-40 text-sm text-white gap-4">
+          <div class="flex flex-col gap-2">
+            <h2>Language</h2>
+            <button
+              class="btn-sm bg-none border-2 border-white text-white rounded-md"
+            >
+              English
+            </button>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <h2>Currency</h2>
+            <button
+              class="btn-sm bg-none border-2 border-white text-white rounded-md"
+            >
+              US-Dollars $
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

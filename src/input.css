@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "HappyDisplay-Regular.woff2";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/Roboto.woff2) format("woff2");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "HappyDisplay";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/Happy_Display_fonts/woff2/HappyDisplay-Regular.woff2)
+      format("woff2");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "HappyDisplay";
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./fonts/Happy_Display_fonts/woff2/HappyDisplay-Regular.woff2)
+      format("woff2");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "AlmadenSans";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(./fonts/Almaden_fonts/woff2/AlmadenSans-Medium-WebXL.woff2)
+      format("woff2");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "AlmadenSans";
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./fonts/Almaden_fonts/woff2/AlmadenSans-Medium-WebXL.woff2)
+      format("woff2");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "AlmadenSans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/Almaden_fonts/woff2/AlmadenSans-Book-WebXL.woff2)
+      format("woff2");
+  }
+}
